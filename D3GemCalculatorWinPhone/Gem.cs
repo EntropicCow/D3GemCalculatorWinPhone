@@ -17,9 +17,9 @@ namespace D3GemCalculatorWinPhone
 
         public Gem()
         { // this used to be 3 txt files read from assembly and stored in a multi-dimensional array, but this is more efficient
-            GemChart = new int[18] { 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 };
-            GoldChart = new int[18] { 10, 25, 40, 55, 70, 85, 100, 5000, 10000, 20000, 30000, 50000, 75000, 100000, 200000, 300000, 400000, 500000 };
-            DeathsBreathChart = new int[18] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1 };
+            GemChart = new int[9] { 2, 2, 2, 3, 3, 3, 3, 3, 3 };
+            GoldChart = new int[9] { 2500, 5000, 10000, 20000, 25000, 200000, 300000, 400000, 500000 };
+            DeathsBreathChart = new int[9] { 0, 0, 0, 0, 0, 0, 0, 1, 1 };
         }
 
         private string CalculateGold(int typeused, int typewanted, int amountwanted)
