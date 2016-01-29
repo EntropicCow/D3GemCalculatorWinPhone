@@ -130,6 +130,12 @@ namespace D3GemCalculatorWinPhone
                 output[0] = "Whole numbers only.";
                 return output;
             }
+            else if (amountwanted == "" || amountwanted == "0")
+            {
+                output = new string[1];
+                output[0] = "Please enter an amount.";
+                return output;
+            }
             else
                 quantity = int.Parse(amountwanted);
                 output = new string[5];
