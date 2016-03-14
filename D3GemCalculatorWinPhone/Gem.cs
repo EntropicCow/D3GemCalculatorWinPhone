@@ -93,6 +93,7 @@ namespace D3GemCalculatorWinPhone
         { // new and improved sanity check code. replaces the old error checking in buttonclick event method thing.
             string[] output;
             int quantity;
+            amountwanted = amountwanted.Replace(" ", string.Empty); // quick trim to make sure there's no extra whitespaces in the string.
 
             if (typeused == -1 && typewanted == -1)
             {
